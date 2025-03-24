@@ -1,0 +1,27 @@
+﻿@model MvcEntityFrameworkApp.Models.Employee
+
+@{
+    ViewBag.Title = "Delete Employee";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-danger">Are you sure you want to delete this employee?</h2>
+
+    <div class="card shadow-lg p-4 mt-4">
+        <div class="card-body">
+            <h3 class="card-title">@Model.Name</h3>
+            <p class="card-text"><strong>Email:</strong> @Model.Email</p>
+            <p class="card-text"><strong>Department:</strong> @Model.Department</p>
+        </div>
+
+        <div class="card-footer text-center">
+            @using (Html.BeginForm("Delete", "Employee", new { id = Model.Id }, FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn btn-danger btn-lg mr-2">Yes, Delete</button>
+                <a href="@Url.Action("Index", "Employee")" class="btn btn-secondary btn-lg">Cancel</a>
+            }
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,43 @@
+**/bin/
+**/.vs/
+
+# Build and Debug output
+bin/
+obj/
+Debug/
+Release/
+
+# Visual Studio settings and cache
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.ilk
+*.aps
+*.ncb
+*.opendb
+*.VC.db
+*.VC.opendb
+
+# Rider and JetBrains
+.idea/
+*.sln.iml
+
+# User-specific settings
+*.csproj.user
+*.dotCover
+*.nunit
+*.nunit3
+
+# Temporary files
+*.tmp
+*.log
+*.DS_Store
+*.Thumbs.db
+
+# NuGet packages
+packages/
+*.nupkg
+project.lock.json
+project.assets.json

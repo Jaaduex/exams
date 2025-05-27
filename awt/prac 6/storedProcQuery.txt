@@ -1,0 +1,26 @@
+CREATE PROCEDURE [dbo].[sp_insertstudentData]
+	@name varchar(50),
+	@age int,
+	@rollno int = 0,
+	@div varchar(50),
+	@email varchar(max)
+AS
+BEGIN
+	insert into Student values(@name,@age,@rollno,@div,@email)
+	SELECT * from Student
+END
+
+
+
+
+
+
+CREATE TABLE [dbo].[Student] (
+    [Id]     INT           IDENTITY (1, 1) NOT NULL,
+    [Name]   VARCHAR (50)  NULL,
+    [Age]    INT           NULL,
+    [RollNo] INT           NULL,
+    [Div]    VARCHAR (50)  NULL,
+    [Email]  VARCHAR (MAX) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);

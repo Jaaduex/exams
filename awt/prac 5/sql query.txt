@@ -1,0 +1,25 @@
+CREATE TABLE ServReg (
+    EmpID INT IDENTITY(1,1) PRIMARY KEY,
+    EmpName NVARCHAR(50) NOT NULL,
+    DeptNo INT NOT NULL
+);
+
+
+INSERT INTO ServReg (EmpName, DeptNo) VALUES
+('John Doe', 101),
+('Jane Smith', 102),
+('Robert Brown', 103);
+
+
+CREATE TABLE StdInfo (
+    RollNo INT IDENTITY(1,1) PRIMARY KEY,
+    FName NVARCHAR(50) NOT NULL,
+    LName NVARCHAR(50) NOT NULL,
+    PhoneNo NVARCHAR(15) NOT NULL
+);
+
+
+INSERT INTO StdInfo (FName, LName, PhoneNo) VALUES
+('Alice', 'Johnson', '1234567890'),
+('Bob', 'Williams', '0987654321'),
+('Charlie', 'Davis', '1122334455');

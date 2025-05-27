@@ -1,0 +1,14 @@
+CREATE DATABASE EmployeeDB;
+GO
+
+
+USE EmployeeDB;
+GO
+
+CREATE TABLE Employees (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(50) NOT NULL,
+    Email NVARCHAR(100) NOT NULL,
+    Department NVARCHAR(50) NOT NULL
+);
+GO

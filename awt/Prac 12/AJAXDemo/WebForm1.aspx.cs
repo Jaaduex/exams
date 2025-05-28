@@ -11,7 +11,10 @@ namespace AJAXDemo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                Label1.Text = "Current Time: " + DateTime.Now.ToString();
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)

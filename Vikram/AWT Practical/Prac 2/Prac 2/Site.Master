@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Prac_2.SiteMaster" %>
+
+<!DOCTYPE HTML>
+
+<html>
+    <head runat="server">
+<title></title>
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+<ul>
+<li><a href="home.aspx">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Article</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+<div>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+</div>
+<footer id="footer">
+copyright @timepass &copy:2021
+</footer>
+</form>
+</body>
+</html>
